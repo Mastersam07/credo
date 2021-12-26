@@ -1,5 +1,6 @@
 name: credo_flutter
-description: A Flutter package for making payments via credo central. Provides support for both Android and iOS
+description: A Flutter package for making payments via credo central. Provides
+  support for both Android and iOS
 version: 0.0.1
 homepage: https://github.com/Mastersam07/credo
 
@@ -8,16 +9,16 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  dio: ^4.0.4
   flutter:
     sdk: flutter
 
 dev_dependencies:
+  flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
-flutter:
+flutter: null
