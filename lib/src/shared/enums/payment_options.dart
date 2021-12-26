@@ -1,0 +1,1 @@
+enum PaymentOption { card, bank }
