@@ -14,13 +14,13 @@ class VerifyTransaction {
   String merchantReferenceNo;
   String deviceDetails;
   double processingFees;
-  int customerCharge;
-  int refund;
+  num customerCharge;
+  num refund;
   bool refunded;
   bool reversed;
   String referenceNo;
   double totalAmount;
-  int fraudWeightedScore;
+  num fraudWeightedScore;
   String fraudRiskRating;
   DateTime updatedAt;
   ApprovalStatus approvalStatus;
@@ -113,13 +113,6 @@ class ApprovalStatus {
     id = json['id'];
     name = json['name'];
   }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
-    data['name'] = name;
-    return data;
-  }
 }
 
 class PaymentStatus {
@@ -133,13 +126,5 @@ class PaymentStatus {
     id = json['id'];
     description = json['description'];
     name = json['name'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
-    data['description'] = description;
-    data['name'] = name;
-    return data;
   }
 }
